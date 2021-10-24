@@ -30,6 +30,15 @@
       justify-content: center;
     }
   </style>
+<script>
+  function getUserInformation() {
+    const name = document.getElementById('Username').value;
+    const address = document.getElementById('Useraddress').value;
+    const number = document.getElementById('Usernumber').value;
+    const quantity = document.getElementById('Userquantity').value;
+    alert("이름 : " + name + "\n주소 : " + address + "\n연락처 : " + number + "\n수량 : " + quantity);
+  }
+</script>
 
 </head>
 
@@ -90,35 +99,34 @@
 
       <div class="input-group mb-3">
         <span class="input-group-text" id="basic-addon1">이름</span>
-        <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+        <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" id="Username">
       </div>
 
       <div class="input-group mb-3">
         <span class="input-group-text" id="basic-addon1">주소</span>
-        <input type="text" class="form-control" placeholder="" aria-label="Useraddress" aria-describedby="basic-addon1">
+        <input type="text" class="form-control" placeholder="" aria-label="Useraddress" aria-describedby="basic-addon1" id="Useraddress">
       </div>
 
       <div class="input-group mb-3">
         <span class="input-group-text" id="basic-addon1">연락처</span>
-        <input type="text" class="form-control" placeholder="" aria-label="Usernumber" aria-describedby="basic-addon1">
+        <input type="text" class="form-control" placeholder="" aria-label="Usernumber" aria-describedby="basic-addon1" id="Usernumber">
       </div>
 
       <div class="input-group mb-3">
-        <label class="input-group-text" for="inputGroupSelect01">수량</label>
-        <select class="form-select" id="inputGroupSelect01">
-          <option selected>----선택----</option>
-          <option value="1">1</option>
+        <label class="input-group-text" for="Userquantity">수량</label>
+        <select class="form-select" id="Userquantity">
+          <option selected>1</option>
           <option value="2">2</option>
           <option value="3">3</option>
         </select>
       </div>
     </div>
 
-    <div class="item" style="align-self: center;">
-      <button type="button" class="btn btn-primary" style="display: inline;">주문하기</button>
+    <div class="item" style="align-self: center; margin-bottom:20px;">
+      <button type="button" class="btn btn-primary" onclick="getUserInformation()">주문하기</button>
     </div>
-  </div>
 
+  </div>
 
 </body>
 
