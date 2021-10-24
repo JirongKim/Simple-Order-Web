@@ -40,6 +40,15 @@
         const number = document.getElementById('Usernumber').value;
         const quantity = document.getElementById('Userquantity').value;
 
+        if (name == "" || address == "" || number == "" || quantity == "") {
+          Swal.fire(
+            '주문이 실패하였습니다.',
+            '모든 정보를 기입하여주세요.',
+            'error'
+          );
+          return;
+        }
+
         Swal.fire({
           title: '올바르게 입력하셨나요?',
           text: "주문하시겠습니까?",
