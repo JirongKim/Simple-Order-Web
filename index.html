@@ -29,7 +29,7 @@
     .container {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      align-items: stretch;
     }
   </style>
   <script>
@@ -125,7 +125,7 @@
       <h2>₩23,900</h2>
     </div>
 
-    <div class="item" style="justify-content: flex-start;">
+    <div class="item">
       <p>주문자 정보</p>
 
       <form method="POST" data-email="jhKim0254@gmail.com" target="iframe1" action="https://script.google.com/macros/s/AKfycbxhhb8rAoMAWc0bN0YdUVvn2f3QSilfvB_Fga-ggrrS32YdeMMUn3fqkU8sexKuYEL9/exec">
@@ -154,9 +154,7 @@
           </select>
         </div>
 
-        <div class="item" style="align-self: center; margin-bottom:20px;">
-          <button type="submit" class="btn btn-primary" id="ORDER">주문하기</button>
-        </div>
+        <button type="submit" class="btn btn-primary" id="ORDER" style="margin-left: 43%; margin-bottom:20px;">주문하기</button>
 
       </form>
     </div>
